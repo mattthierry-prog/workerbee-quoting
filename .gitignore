@@ -1,0 +1,6 @@
+# .gitignore
+# Never commit secrets or environment settings
+.env
+*.local.*
+secrets/
+node_modules/
