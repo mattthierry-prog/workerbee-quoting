@@ -7,7 +7,7 @@ services:
     volumes:
       - ./:/app
     ports:
-      - "18910:18910"
+      - "18810:18910"
     environment:
       - WORKERBEE_PORT=18910
     restart: unless-stopped
