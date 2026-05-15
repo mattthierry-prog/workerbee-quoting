@@ -1,13 +1,12 @@
-version: "3.8"
 services:
   workerbee:
     image: node:18
-    command: node scripts/workerbee-quote-server.mjs
+    command: sh -c "npm install && node scripts/workerbee-quote-server.mjs"
     working_dir: /app
     volumes:
       - ./:/app
     ports:
-      - "18810:18910"
+      - "18910:18910"
     environment:
       - WORKERBEE_PORT=18910
     restart: unless-stopped
